@@ -10,7 +10,7 @@ results: string[];
 
 constructor(private http: HttpClient) {}
 ngOnInit(): void {
-this.http.get('http://GITPOD_SERVER_URL/api').subscribe(data => {
+this.http.get('https://3000-fce1168c-0748-4f8c-ac91-da678227605e.ws-eu01.gitpod.io/api').subscribe(data => {
 
 this.results = data['results'];
 });
